@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('TEST') {
             steps {
-                git credentialsId: 'git_credentials', url: 'https://github.com/ImadElAlami/jenkinsExam.git'
+                git branch: 'main', credentialsId: 'git_credentials', url: 'https://github.com/ImadElAlami/jenkinsExam'
             }
         }
     }
