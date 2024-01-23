@@ -4,7 +4,7 @@ pipeline {
         stage('TEST') {
             steps {
                 echo 'Hello World'
-                git url 'https://github.com/ImadElAlami/jenkinsExam.git'
+                git credentialsId: 'git_credentials', url: 'https://github.com/ImadElAlami/jenkinsExam.git'
             }
         }
     }
